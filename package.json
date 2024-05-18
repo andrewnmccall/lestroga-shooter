@@ -1,0 +1,32 @@
+{
+  "name": "lestroga-shooter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --mode=development",
+    "build": "run-s clean build-only",
+    "build-only": "webpack --mode=production",
+    "clean": "rimraf dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "pixi.js": "^7.2.4"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "eslint": "^8.45.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-jsdoc": "^46.4.4",
+    "html-webpack-plugin": "^5.5.3",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
